@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="http://jquery-ui.googlecode.com/svn/tags/1.8.18/themes/flick/jquery-ui.css" />
+  <link type="text/css" rel="stylesheet" href="/css/slider.css" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+  <script src="/js/app.js"></script>
+</head>
+<body>
+  <form action="/status" method="post">
+    <div style="position:absolute;left:50px;top:50px;">
+      <div id="slider" class="slider"></div>
+      <div style="">
+        <input id="value1" name="status" type="number" value="{{ status }}"/>
+      </div>
+      <div style="">
+        <input id="sub" type="submit" value="Update lamp status" />
+      </div>
+    </div>
+  </form>
+</body>
+</html>
+{% endautoescape %}

@@ -1,0 +1,62 @@
+ /*
+     * Center the slider by wrapping it in a container
+     */
+ .slider-container {
+     text-align: center;
+ }
+ /*
+         * Another container that holds the actual background of the slider,
+         * with padding to make sure the handle doesn't go outside of the background.
+         */
+ .slider-bg {
+     background: transparent url('/static/images/slider_bg.png') 0% 0%;
+     height: 235px;
+     width: 98px;
+     padding-top: 20px;
+     padding-bottom: 7px;
+     margin: 0 auto;
+ }
+ /*
+             * The actual element holding the slide handler
+             */
+ .ui-slider {
+     height: 600px;
+     width: 80px;
+     // Overrides -moz-border-radius-topleft: 14px;
+     -webkit-border-top-left-radius: 14px;
+     -khtml-border-top-left-radius: 14px;
+     border-top-left-radius: 14px;
+     -moz-border-radius-topright: 14px;
+     -webkit-border-top-right-radius: 14px;
+     -khtml-border-top-right-radius: 14px;
+     border-top-right-radius: 14px;
+     -moz-border-radius-bottomleft: 14px;
+     -webkit-border-bottom-left-radius: 14px;
+     -khtml-border-bottom-left-radius: 14px;
+     border-bottom-left-radius: 14px;
+     -moz-border-radius-bottomright: 14px;
+     -webkit-border-bottom-right-radius: 14px;
+     -khtml-border-bottom-right-radius: 14px;
+     border-bottom-right-radius: 14px;
+ }
+ .ui-slider-handle {
+     width: 15px;
+     height: 29px;
+     background: transparent url('http://www.iconfinder.com/design/css/Aristo/images/slider_handles.png') 0% 0% ! important;
+     z-index:2;
+     // Overrides left: 5px !important;
+     .border-radius(0 0 0 0);
+     border: 0px !important;
+ }
+ .ui-slider-range {
+     width: 15px;
+     background: transparent url('/static/images/slider_range.png') 0% 0%;
+ }
+ .ui-widget-header {
+     border: 1px solid #dddddd;
+     background: #33CCFF url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) repeat-x 50% 50%;
+     color: #444444;
+     font-weight: bold;
+     -moz-border-radius: 50px;
+     border-radius: 50px;
+ }
